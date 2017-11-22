@@ -15,9 +15,12 @@ Follow variables are useable :
 <?php if (!defined ('ABSPATH')) die ('No direct access allowed'); ?><?php if (!empty ($galleries)) { ?>
 
 	<?php foreach ($galleries as $gallery) { ?>
-		<li style="background-image: url( '<?php echo $gallery->previewurl ?>' );">
+		<li>
 			<a href="<?php echo $gallery->pagelink ?>">
-				<p class="title-gallery"><?php echo $gallery->title; ?></p>
+				<span class="block-photo">
+					<img src="<?php echo $gallery->previewurl ?>" alt="">
+				</span>
+				<span class="title"><?php echo $gallery->title; ?></span>
 			</a>
 		</li>
  	<?php } ?>
