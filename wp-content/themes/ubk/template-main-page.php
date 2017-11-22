@@ -78,41 +78,42 @@ get_header();
     <main class="main">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <ul class="product-list">
-                        <li>
-                            <img src="/wp-content/themes/ubk/images/product-1.jpg" alt="">
-                            <div class="description">
-                                <p class="h3-title">ШКАФЫ</p>
-                                <p>Шкафы-купе сегодня завоевывают все большую популярность во всем мире. Севастополь тоже не отстает от модных тенденций. Компания MLider предлагает
-                                <a href="#">Подробнее</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="/wp-content/themes/ubk/images/product-1.jpg" alt="">
-                            <div class="description">
-                                <p class="h3-title">ШКАФЫ</p>
-                                <p>Шкафы-купе сегодня завоевывают все большую популярность во всем мире. Севастополь тоже не отстает от модных тенденций. Компания MLider предлагает
-                                <a href="#">Подробнее</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="/wp-content/themes/ubk/images/product-1.jpg" alt="">
-                            <div class="description">
-                                <p class="h3-title">ШКАФЫ</p>
-                                <p>Шкафы-купе сегодня завоевывают все большую популярность во всем мире. Севастополь тоже не отстает от модных тенденций. Компания MLider предлагает
-                                <a href="#">Подробнее</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="/wp-content/themes/ubk/images/product-1.jpg" alt="">
-                            <div class="description">
-                                <p class="h3-title">ШКАФЫ</p>
-                                <p>Шкафы-купе сегодня завоевывают все большую популярность во всем мире. Севастополь тоже не отстает от модных тенденций. Компания MLider предлагает
-                                <a href="#">Подробнее</a></p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-md-12">              
+                <?php
+                    $args = array(
+                        'numberposts' => 4,
+                        'post_type'   => 'post',
+                        'orderby'     => 'date',
+                        'order'       => 'DESC',
+                        'post_status' => 'publish',
+                    );
+        
+                    $news_list = get_posts( $args );
+                ?>
+                <?php if($news_list){ ?>
+                <ul class="product-list">
+                <?php foreach($news_list as $news){ ?>
+                <?php
+                    $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($news->ID), 'full');
+                    $descr = wp_trim_words( $news->post_content, 30, '...' );
+                    $link = get_permalink($news->ID);
+                ?>
+                    <li>
+                        <?php if(!empty($image_url)){ ?>
+                            <img src="<?php echo $image_url[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($service->ID), '_wp_attachment_image_alt', true ); ?>">
+                        <?php }else{ ?>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/product-1.jpg">
+                        <?php } ?>
+                        <div class="description">
+                            <p class="h3-title"><?php echo $news->post_title; ?></p>
+                            <p><?php echo $descr; ?></p>
+                            <p><a href="<?php echo $link; ?>">Подробнее</a></p>
+                        </div>
+                    </li>
+                <?php } ?>
+                </ul>
+                <?php wp_reset_postdata(); ?>
+                <?php } ?>
                 </div>
             </div>
         </div>
