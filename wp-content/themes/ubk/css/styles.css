@@ -331,9 +331,19 @@ main ul li:before {
   margin-top: 5px;
 }
 
-.product-list p, .product-list .main-contacts p a, .main-contacts p .product-list a {
+.product-list p,
+.product-list .main-contacts p a,
+.main-contacts p .product-list a {
   line-height: 18px;
   color: #4b4b4b;
+}
+
+.product-list p {
+  padding-bottom: 0;
+}
+
+.product-list p:last-child {
+  padding-bottom: 20px;
 }
 
 .product-list .h3-title {
