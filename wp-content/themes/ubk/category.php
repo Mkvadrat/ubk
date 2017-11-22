@@ -82,6 +82,10 @@ get_header();
 	                        <li><?php echo $pag; ?></li>
 						<?php } ?>
                     </ul>
+					<?php }else{ ?>
+					<ul class="bread-crumbs">
+					<li></li>
+					</ul>
 					<?php } ?>
                 </div>
             </div>
