@@ -54,7 +54,7 @@ get_header();
 
                 <div class="col-md-12">
                     <div class="grey-padding-block grey-padding-block-form">
-                        <div class="form">
+                        <div class="form" id="contacts-form">
                             <p class="h3-title">Форма обратной связи</p>
                             <input type="text" id="name" placeholder="Ваше Имя">
                             <input type="text" id="phone" placeholder="Ваш телефон">

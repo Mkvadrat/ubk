@@ -10,6 +10,15 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.description-category li:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	.description-category li,
+	.description-category li:nth-child(4n) {
+	  	margin-right: 27px;
+	}
+
 	.footer .bottom-line p:nth-child(2) {
 	    margin-left: 0;
 	    text-align: right;
@@ -198,6 +207,16 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.description-category {
+		display: block;
+		text-align: center;
+	}
+
+	.description-category li {
+		display: inline-block;
+		margin: 10px !important;
+	}
 
 	.product-list li {
 		width: 100%;

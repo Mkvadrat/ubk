@@ -26,7 +26,7 @@ a {
 }
 
 body {
-  font-family: Arial, Geneva, Helvetica, sans-serif;
+  font-family: "arial", "MyriadPro-Regular", Arial, Geneva, Helvetica, sans-serif;
   background-image: url(../images/page-bg.png);
   background-size: cover;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ body {
 /*----------- start templates ------------------*/
 /*----------------------------------------------*/
 .owl-carousel {
-  z-index: -1 !important;
+  z-index: 0 !important;
 }
 
 .description-category {
@@ -54,10 +54,10 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-bottom: 0;
 }
 
@@ -65,6 +65,11 @@ body {
   width: 198px;
   padding-left: 0;
   margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.description-category li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .description-category li:before {
@@ -1289,7 +1294,7 @@ textarea:focus:-ms-input-placeholder {
   height: 70px;
   resize: none;
   float: right;
-  margin-top: -90px;
+  margin-top: -80px;
 }
 
 .main-contacts .form input[type="submit"] {
