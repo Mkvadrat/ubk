@@ -27,6 +27,7 @@ a {
 
 body {
   font-family: "arial", "MyriadPro-Regular", Arial, Geneva, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   background-image: url(../images/page-bg.png);
   background-size: cover;
   background-attachment: fixed;
