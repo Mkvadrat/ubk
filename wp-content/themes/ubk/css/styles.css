@@ -618,6 +618,9 @@ textarea:focus:-ms-input-placeholder {
   background-image: -webkit-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
   background-image: -o-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
   background-image: linear-gradient(to top, #4d709b 0%, #162d49 100%);
+  background-image: url(../images/nav-bg.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
   border: 1px solid #2b415d;
   border-radius: 0px 0px 15px 15px;
   -webkit-box-shadow: 0 3px 0 #385477;
@@ -658,7 +661,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .header nav ul a:hover {
-  background-color: #162d49;
+  background-color: rgba(24, 50, 81, 0.8);
 }
 
 .header nav ul li {
