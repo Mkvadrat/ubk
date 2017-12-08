@@ -71,4 +71,12 @@ $(document).ready(function() {
 
     $(".fancybox").fancybox();
 
+    $('#i-take-body').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit1, #submit2').prop('disabled', false).addClass('active-button');
+        } else {
+            $('#submit1, #submit2').prop('disabled', true).removeClass('active-button');
+        }
+    });
+
 });

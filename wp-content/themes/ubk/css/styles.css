@@ -1488,3 +1488,85 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+
+
+
+.i-take-block {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+    
+.i-take-block label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+}
+
+.i-take-block input[type=checkbox] {
+  display: none !important;
+}
+
+.i-take-block label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background-color: #c8c8c8;
+}
+
+.i-take-block label:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.i-take-block input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+#submit1,
+#submit2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+       -o-transition: 0.3s;
+          transition: 0.3s;
+}
+
+.active-button {
+  opacity: 1 !important;
+}
+
+#contacts-form .i-take-block label {
+  color: #000;
+}

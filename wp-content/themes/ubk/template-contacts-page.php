@@ -56,10 +56,14 @@ get_header();
                     <div class="grey-padding-block grey-padding-block-form">
                         <div class="form" id="contacts-form">
                             <p class="h3-title">Форма обратной связи</p>
+                            <div class="i-take-block">
+                                <input id="i-take-body" type="checkbox">
+                                <label for="i-take-body">Я принимаю условия соглашения на обработку персональных</label>
+                            </div>
                             <input type="text" id="name" placeholder="Ваше Имя">
                             <input type="text" id="phone" placeholder="Ваш телефон">
                             <textarea id="message" placeholder="Вопрос"></textarea>
-                            <input type="submit" onclick="SendForm();" value="Отправить">
+                            <input type="submit" onclick="SendForm();" value="Отправить" id="submit2" disabled>
                         </div>
                     </div>
                 </div>
