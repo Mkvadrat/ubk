@@ -191,6 +191,9 @@ main ul li:before {
   background-image: -webkit-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
   background-image: -o-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
   background-image: linear-gradient(to top, #4d709b 0%, #162d49 100%);
+  background-image: url(../images/nav-bg.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
   border: 1px solid #2b415d;
   border-radius: 5px;
   -webkit-box-shadow: 0 3px 0 #385477;
@@ -213,6 +216,7 @@ main ul li:before {
   background-image: -webkit-linear-gradient(bottom, #162d49 0%, #4d709b 100%);
   background-image: -o-linear-gradient(bottom, #162d49 0%, #4d709b 100%);
   background-image: linear-gradient(to top, #162d49 0%, #4d709b 100%);
+  background-image: url(../images/nav-bg-hover.png);
   color: #fff;
   text-decoration: none;
 }
@@ -512,6 +516,7 @@ textarea:focus:-ms-input-placeholder {
   float: left;
   width: 245px;
   height: auto;
+  text-align: center;
 }
 
 .header .logo-block .logo img {
