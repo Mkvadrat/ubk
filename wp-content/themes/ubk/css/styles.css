@@ -520,7 +520,8 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .header .logo-block .logo img {
-  width: auto;
+  display: inline-block;
+  width: 183px;
   height: auto;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
