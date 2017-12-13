@@ -515,7 +515,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .header .logo-block .logo img {
-  width: 100%;
+  width: auto;
   height: auto;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -973,7 +973,7 @@ textarea:focus:-ms-input-placeholder {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#4d709b), to(#162d49));
   background-image: -webkit-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
   background-image: -o-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
-  background-image: linear-gradient(to top, #4d709b 0%, #162d49 100%);
+  background-image: linear-gradient(to top, #1b2b65 0%, #0d1f61 100%);
   border: 1px solid #2b415d;
   -webkit-box-shadow: 0 3px 0 #385477;
   box-shadow: 0 3px 0 #385477;
@@ -1043,7 +1043,7 @@ textarea:focus:-ms-input-placeholder {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#4d709b), to(#162d49));
   background-image: -webkit-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
   background-image: -o-linear-gradient(bottom, #4d709b 0%, #162d49 100%);
-  background-image: linear-gradient(to top, #4d709b 0%, #162d49 100%);
+  background-image: linear-gradient(to top, #1b2b65 0%, #0d1f61 100%);
   border: 1px solid #2b415d;
   border-radius: 0px 0px 15px 15px;
   -webkit-box-shadow: 0 3px 0 #385477;
