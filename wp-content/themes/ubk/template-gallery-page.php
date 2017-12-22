@@ -50,7 +50,7 @@ get_header();
 							?>
                         </ul>
 
-                        <p><a class="get-more back" href="javascript:void(0)">Назад к списку материалов</a></p>
+                        <p><a class="get-more back" href="javascript:void(0)">Назад</a></p>
                     </div>
                 </div>
             </div>
