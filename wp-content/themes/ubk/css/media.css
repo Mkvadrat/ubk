@@ -10,6 +10,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.main .grey-padding-block .welcome-block .col-md-2 img {
+		padding-top: 0;
+	}
+
 	.i-take-block {
 		max-width: 280px;
 	}
