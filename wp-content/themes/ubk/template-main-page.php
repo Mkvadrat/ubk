@@ -9,6 +9,8 @@ Description: Тема для сайта http://ubk-mebel.ru/
 Version: 1.0
 */
 
+/* test */
+
 get_header(); 
 ?>
 
