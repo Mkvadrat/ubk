@@ -10,6 +10,28 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.main .grey-padding-block .welcome-block .col-md-2 img {
+		padding-top: 0;
+	}
+
+	.i-take-block {
+		max-width: 280px;
+	}
+
+	.main-contacts .form textarea {
+	    float: none;
+	    margin: 0 auto 10px auto;
+	}
+
+	.main-contacts .form input[type="text"] {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.main-contacts .form .h3-title {
+	    text-align: center;
+	}
+
 	.description-category li:nth-child(3n) {
 		margin-right: 0;
 	}
