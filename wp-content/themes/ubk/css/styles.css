@@ -226,6 +226,7 @@ main ul li:before {
   background-image: url(../images/nav-button-bg.png);
   webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  border: none;
 }
 
 .button.red-button:hover {
