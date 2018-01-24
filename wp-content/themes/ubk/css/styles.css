@@ -236,7 +236,7 @@ main ul li:before {
 .grey-padding-block {
   position: relative;
   overflow: hidden;
-  background-color: #fbfbfb;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   padding: 45px 35px;
   margin-bottom: 15px;
@@ -275,7 +275,7 @@ main ul li:before {
   width: 49%;
   position: relative;
   overflow: hidden;
-  background-color: #fbfbfb;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   padding: 175px 50px 5px 50px;
   margin-bottom: 15px;
@@ -327,7 +327,7 @@ main ul li:before {
   width: 49%;
   position: relative;
   padding: 30px 20px 0 20px;
-  background-color: #fbfbfb;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   margin-bottom: 15px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
