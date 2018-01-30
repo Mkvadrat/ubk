@@ -43,17 +43,17 @@ get_header();
 						<?php foreach($service_list as $service){ ?>
 						<?php
 							$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($service->ID), 'full');
-							$descr = wp_trim_words( $service->post_content, 30, '...' );
+							$descr = wp_trim_words( $service->post_content, 15, '...' );
 							$link = get_permalink($service->ID);
 						?>
                         <li>
 							<?php if(!empty($image_url)){ ?>
-								<img src="<?php echo $image_url[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($service->ID), '_wp_attachment_image_alt', true ); ?>">
+								<img src="<?php echo $image_url[0]; ?>" alt="<?php echo get_post_meta( get_post_thumbnail_id($service->ID), '_wp_attachment_image_alt', true ); ?>" style="width:150px;">
 							<?php }else{ ?>
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/product-1.jpg">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/product-1.jpg" style="width:150px;">
 							<?php } ?>
                             <div class="description">
-                                <p class="h3-title"><?php echo $service->post_title; ?></p>
+                                <p class="h3-title"><?php echo wp_trim_words( $service->post_title, 4, '...' ); ?></p>
                                 <p><?php echo $descr; ?></p>
                                 <p><a href="<?php echo $link; ?>">Подробнее</a></p>
                             </div>
